@@ -1,0 +1,382 @@
+/* Estilos generales */
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+
+.contenedor  {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Estilos para el header */
+
+header {
+    width: 100%;
+    background: url('../img/bg.jpg') #281A0C;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center 0;
+}
+
+header .contenedor {
+    position: relative;
+    height: 700px;
+}
+
+header .menu {
+    width: 100%;
+    text-align: right;
+}
+
+header .menu a {
+    color: wheat;
+    font-size: 20px;
+    font-weight: 300;
+    display: inline-block;
+    text-decoration: none;
+    margin: 35px 20px;
+    position: relative;
+}
+
+header .menu a:hover {
+    text-decoration: underline;
+}
+
+header .textos {
+    width: 100%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    margin-top: -55px;
+}
+
+header .textos .nombre {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+header .textos .nombre span {
+    font-weight: 300;
+}
+
+header .textos .slogan {
+    font-weight: 300;
+    font-size: 25px;
+    font-style: italic;
+}
+
+/* Estilos para el main sección acerca de */
+
+.main {
+    background: url(../img/bg-textura.png);
+    background-repeat: repeat;
+}
+
+.main .acerca-de .contenedor {
+    overflow: visible;
+    position: relative;
+}
+
+.main .acerca-de .foto {
+    width: 80%;
+    position: absolute;
+    left: 0;
+    top: -50px;
+    z-index: 0;
+    box-shadow: 0 0 15px rgba(0, 0, 0, .4);
+}
+
+.main .acerca-de .foto img {
+    width: 100%;
+    vertical-align: top;
+}
+
+.main .acerca-de article {
+    background: white;
+    padding: 40px;
+    width: 50%;
+    position: relative;
+    float: right;
+    top: 920px;
+    z-index: 1;
+    box-shadow: 0 0 15px rgba(0, 0, 0, .4);
+}
+
+.main .acerca-de article h3 {
+    font-size: 50px;
+    font-weight: 300;
+    margin-bottom: 40px;
+}
+
+.main .acerca-de article p {
+    line-height: 28px;
+    margin-bottom: 15px;
+}
+
+/* Estilos para la sección menu */
+
+.main .menu {
+    padding-top: 670px;
+    margin-bottom: 50px;
+}
+
+.main .menu .contenedor-menu, 
+.main .menu .contenedor-menu2 {
+    border: 1px solid black;
+    background: transparent;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.main .menu .titulo {
+    font-size: 40px;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.menu article {
+    width: 50%;
+    float: left;
+    padding: 20px;
+}
+
+.menu .categoria {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.platillo {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 4px dotted black;
+    overflow: hidden;
+}
+
+.menu .nombre {
+    font-size: 20px;
+    margin-bottom: 15px;
+    float: left;
+}
+
+.menu .precio {
+    float: right;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.menu .descripcion {
+   font-size: 16px;
+   color: #676767;
+   clear: both;
+}
+
+/* Estilos para la sección galeria */
+
+.galeria {
+    overflow: hidden;
+}
+
+.galeria .foto {
+    width: 25%;
+    float: left;
+}
+
+.galeria .foto img {
+    width: 100%;
+    vertical-align: top;
+    opacity: .7;
+    transition: all .4s ease;
+}
+
+.galeria .foto img:hover {
+    opacity: 1;
+}
+
+/* Estilos para la sección de ubicación */
+
+.ubicacion {
+    background: white;
+    padding: 60px 0;
+    overflow: hidden;
+}
+
+.ubicacion  .titulo{
+    text-align: center;
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 300;
+    margin-bottom: 40px;
+}
+
+/* Estilos para la sección de dirección/ubicación */
+.ubicacion .direccion {
+    float: left;
+    width: 50%;
+    text-align: left;
+} 
+
+.ubicacion .horarios {
+    float: right;
+    width: 50%;
+    text-align: right;
+    overflow: hidden;
+}
+
+.ubicacion .direccion .calle {
+    margin-bottom: 15px;
+}
+
+.ubicacion .horarios h4 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.ubicacion .horarios .entre-semana,
+.ubicacion .horarios .fin-semana {
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+
+.mapa {
+    width: 100%;
+    overflow: hidden;
+}
+
+.mapa iframe {
+    width: 100%;
+    max-width: 1600px;
+}
+
+/* Estilos para el footer */
+
+footer {
+    background: rgb(34, 34, 34);
+}
+
+footer .copyright {
+    text-align: center;
+    padding: 15px 0;
+    color: white;
+}
+
+footer .autor {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 800px) {
+    /* Estilos para el header */
+
+    header .contenedor {
+        position: static;
+        height: auto;
+    }
+    header .textos {
+        position: static;
+        margin: 100px 0;
+    }
+    header .menu {
+        text-align: center;
+    }
+    /* header .menu a {
+        margin: 10px 20px;
+    } */
+    header .menu a {
+        margin: 10px 35px;
+        margin-bottom: 100px;
+        font-size: 18px;
+    }
+    header .textos .nombre {
+        font-size: 30px;
+    }
+    header .textos .slogan { 
+        font-size: 18px;
+    }
+
+    /* Estilos para la sección acerca de */
+
+    .main .acerca-de .foto {
+        width: 100%;
+        position: relative;
+    }
+    .main .acerca-de article {
+        position: relative;
+        width: 100%;
+        top: -50px;
+        transform: translate(0px, 0);
+    }
+    .main .menu {
+        padding-top: 300px;
+    }
+    .main .menu article {
+        width: 100%;
+    }
+
+    /* Estilos para la sección de galeria */
+
+    .galeria .foto {
+        width: 50%;
+    }
+
+    /* Estilos para la sección ubicación (mapa) */
+
+    .main .mapa {
+        width: 80%;
+        margin: auto;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+
+    /* Estilos para el header menu */
+
+    header .menu a {
+        margin: 10px 5px;
+        margin-bottom: 100px;
+        font-size: 16px;
+    }
+
+    /* Estilos para la sección acerca de */
+
+    .main .acerca-de article h3 {
+        font-size: 34px;
+        margin-bottom: 10px;
+    }
+
+    /* Estilos para la sección del menu */
+
+    .main .menu article .nombre, 
+    .main .menu article .precio {
+        font-size: 16px;
+        line-height: 16px;
+    } 
+
+    /* Estilos para la sección de ubicación (horarios) */
+
+     .ubicacion .direccion,
+     .ubicacion .horarios {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
